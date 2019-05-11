@@ -17,12 +17,12 @@ public class StudentService implements StudentServiceLocal {
 
     @Override
     public void addStudent(String firstname, String lastname) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("identité de l'etudiant "+firstname+" "+lastname);
     }
 
     @Override
     public void addAuthenticationInformations(String email, String pwd) {
-        System.out.println("ajout    des    informations    d'authentification: "+email+" -"+pwd);
+        System.out.println("ajout des informations d'authentification: "+email+" -"+pwd);
     }
 
     @Override
