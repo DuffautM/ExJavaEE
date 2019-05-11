@@ -8,6 +8,8 @@ package com.cesi.business.logic;
 import javax.ejb.Stateful;
 import javax.ejb.Remove;
 import com.cesi.business.domain.Student;
+import com.cesi.integration.StudentDAO;
+import javax.inject.Inject;
 
 /**
  *
@@ -17,6 +19,9 @@ import com.cesi.business.domain.Student;
 public class StudentService implements StudentServiceLocal {
     
     private Student student = new Student();
+    
+    @Inject
+    StudentDAO studentDAO;
 
     @Override
     public void addStudent(String firstname, String lastname) {
@@ -35,6 +40,7 @@ public class StudentService implements StudentServiceLocal {
     @Override
     @Remove
     public void save() {
+        studentDAO.insert(student);
         System.out.println("sauvegarde de l'étudiant créé");
     }
 
