@@ -1,3 +1,5 @@
 /home/maxime/javaProjects/ExJavaEE/cesiBigApp/src/main/java/com/cesi/business/logic/StudentServiceLocal.java
+/home/maxime/javaProjects/ExJavaEE/cesiBigApp/src/main/java/com/cesi/business/domain/Student.java
 /home/maxime/javaProjects/ExJavaEE/cesiBigApp/src/main/java/com/cesi/presentation/model/StudentBean.java
 /home/maxime/javaProjects/ExJavaEE/cesiBigApp/src/main/java/com/cesi/business/logic/StudentService.java
+/home/maxime/javaProjects/ExJavaEE/cesiBigApp/src/main/java/com/cesi/integration/StudentDAO.java

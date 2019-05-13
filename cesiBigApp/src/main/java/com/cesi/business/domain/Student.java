@@ -5,6 +5,7 @@
  */
 package com.cesi.business.domain;
 
+import java.io.Serializable;
 import javax.persistence.*;
 
 /**
@@ -13,7 +14,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="etudiants")
-public class Student {
+public class Student implements Serializable {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long studentId;
@@ -21,6 +22,7 @@ public class Student {
     private String firstname;
     @Column(name="nom")
     private String lastname;
+    @Column(name="email")
     private String email;
     @Column(name="motdepasse")
     private String password;

@@ -22,11 +22,12 @@ import javax.inject.Inject;
 public class StudentBean implements Serializable {
     
     private String firstname,lastname,email,password;
+    
     @Inject
     private StudentServiceLocal studentService;
     
     public String addIdentity(){
-        System.out.println(firstname+""+lastname);
+        System.out.println(firstname+" "+lastname);
         studentService.addStudent(firstname, lastname);
         return "authentication";
     }
@@ -76,12 +77,6 @@ public class StudentBean implements Serializable {
     
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    /**
-     * Creates a new instance of StudentBean
-     */
-    public StudentBean() {
     }
     
 }

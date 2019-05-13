@@ -1,1 +1,6 @@
+com/cesi/integration/StudentDAO.class
+com/cesi/business/domain/Student.class
+com/cesi/business/domain/Student_.class
+com/cesi/business/logic/StudentService.class
+com/cesi/business/logic/StudentServiceLocal.class
 com/cesi/presentation/model/StudentBean.class
